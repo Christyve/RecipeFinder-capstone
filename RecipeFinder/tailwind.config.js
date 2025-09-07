@@ -2,26 +2,29 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        accent: '#16A34A',
-        pagebg: '#f8fafc',
-        cardbg: '#ffffff',
-        text: '#111827',
-        muted: '#6b7280'
-      },
-      maxWidth: {
-        container: '1200px',
-        card: '368px'
+        bg: "#DCE8D8",
+        primary: "#2C9B1A",
+        dark: "#476920",
+        white: "#FFFFFF",
+        danger: "#E53935",
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        inter: ['Inter', 'sans-serif']
-      }
-    }
+        sans: ["Poppins", "Inter", "sans-serif"],
+      },
+      borderRadius: {
+        xl: "12px",     // for cards
+        "2xl": "20px",  // for search bar
+        full: "9999px", // for buttons
+      },
+      boxShadow: {
+        default: "0 2px 4px rgba(0, 0, 0, 0.2)",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 }
